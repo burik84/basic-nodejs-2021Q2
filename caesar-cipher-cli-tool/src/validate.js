@@ -22,15 +22,15 @@ const validate = ({ shift, input, output, action }) => {
       'Option "action" maybe only: "encode/decode"!  Please try to enter the correct data'
     );
   }
-  if (input) {
-    error = !validateFile(input);
+  if (input && !validateFile(input)) {
+    error = true;
   }
 
-  if (output) {
-    error = !validateFile(output);
+  if (output && !validateFile(output)) {
+    error = true;
   }
   if (error === true) {
-    process.exit(1);
+    () => process.exit(1);
   }
   return error;
 };

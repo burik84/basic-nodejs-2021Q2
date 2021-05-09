@@ -4,5 +4,4 @@ const { runStream } = require('./src/runStream');
 
 const argsCLI = getArgumentsCLI();
 const isValid = validate(argsCLI);
-
-isValid ? null : runStream();
+isValid ? null : runStream(argsCLI);
