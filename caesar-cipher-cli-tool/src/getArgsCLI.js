@@ -1,25 +1,20 @@
 const { program } = require('commander');
 
 const getArgumentsCLI = () => {
-  let shift, input, output, action;
-
   program
-    .option('-s, --shift <shift>', 'a shift')
-    .option('-i, --input <input>', 'an input file')
-    .option('-o, --output <output>', 'an output file')
-    .option('-a, --action <action>', 'an action encode/decode');
-
-  program.parse(process.argv);
+    .option('-s --shift <shift>', 'a shift')
+    .option('-i --input <input>', 'an input file')
+    .option('-o --output <output>', 'an output file')
+    .option('-a --action <action>', 'an action encode/decode')
+    .parse(process.argv);
 
   const options = program.opts();
-  program.action((options) => {
-    shift = options.shift;
-    input = options.input;
-    output = options.output;
-    action = options.action;
-  });
+  const shift = options.shift;
+  const input = options.input;
+  const output = options.output;
+  const action = options.action;
 
-  console.log(options);
+  console.log(shift, input, output, action);
 
   return {
     shift,
