@@ -1,8 +1,6 @@
 const { validateFile } = require('./validateFile');
 
 const validate = ({ shift, input, output, action }) => {
-  console.log(shift, input, output, action);
-
   let error = false;
   if (isNaN(shift)) {
     error = true;
