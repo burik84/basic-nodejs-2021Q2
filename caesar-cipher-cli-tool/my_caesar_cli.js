@@ -1,4 +1,5 @@
 const { getArgumentsCLI } = require('./src/getArgsCLI');
-// const { transformStream } = require('./src/transformStream');
+const { validate } = require('./src/validate');
 
-getArgumentsCLI();
+const argsCLI = getArgumentsCLI();
+validate(argsCLI);

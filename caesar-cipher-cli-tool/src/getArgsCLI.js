@@ -9,12 +9,10 @@ const getArgumentsCLI = () => {
     .parse(process.argv);
 
   const options = program.opts();
-  const shift = options.shift;
+  const shift = parseInt(options.shift, 10);
   const input = options.input;
   const output = options.output;
   const action = options.action;
-
-  console.log(shift, input, output, action);
 
   return {
     shift,
