@@ -32,6 +32,7 @@ const validate = ({ shift, input, output, action }) => {
   if (error === true) {
     process.exit(1);
   }
+  return error;
 };
 
 module.exports = {
