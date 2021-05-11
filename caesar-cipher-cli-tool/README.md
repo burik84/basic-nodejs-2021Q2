@@ -3,7 +3,9 @@
 ## Easy to use
 
 - Download project files
-- Got to project root directory
+- Go to project root directory
+- Checkout branch ```git checkout caesar-cipher-cli-tool```
+- Go to directory caesar-cipher-cli-tool
 - Run ```npm install```
 
 ## Run the program and arguments
