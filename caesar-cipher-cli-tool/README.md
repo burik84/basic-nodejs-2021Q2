@@ -2,7 +2,7 @@
 
 ## Easy to use
 
-- Download project files
+- Download project files ```git clone https://github.com/burik84/basic-nodejs-2021Q2```
 - Go to project root directory
 - Checkout branch ```git checkout caesar-cipher-cli-tool```
 - Go to directory caesar-cipher-cli-tool
